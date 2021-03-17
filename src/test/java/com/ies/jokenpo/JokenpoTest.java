@@ -10,11 +10,9 @@ public class JokenpoTest {
 	public void rockSmashesScissors() throws Exception {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
-		Game game = new Game();
+		Game game = new Game(playerLuiz, playerMarcos); // Poderia colocar os jogadores aqui.
 		Play play = new Play(game);
 		
-		game.addPlayer(playerLuiz);
-		game.addPlayer(playerMarcos);
 		play.addPlay(GameOptions.ROCK, playerMarcos);
 		play.addPlay(GameOptions.SCISSORS, playerLuiz);
 		Results result = new Results(play);
@@ -26,11 +24,9 @@ public class JokenpoTest {
 	public void scissorsCutPaper() throws Exception {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
-		Game game = new Game();
+		Game game = new Game(playerLuiz, playerMarcos);
 		Play play = new Play(game);
 		
-		game.addPlayer(playerLuiz);
-		game.addPlayer(playerMarcos);
 		play.addPlay(GameOptions.PAPER, playerMarcos);
 		play.addPlay(GameOptions.SCISSORS, playerLuiz);
 		Results result = new Results(play);
@@ -42,11 +38,9 @@ public class JokenpoTest {
 	public void paperCoversRock() throws Exception {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
-		Game game = new Game();
+		Game game = new Game(playerLuiz, playerMarcos);
 		Play play = new Play(game);
 		
-		game.addPlayer(playerLuiz);
-		game.addPlayer(playerMarcos);
 		play.addPlay(GameOptions.PAPER, playerMarcos);
 		play.addPlay(GameOptions.ROCK, playerLuiz);
 		Results result = new Results(play);
@@ -58,11 +52,9 @@ public class JokenpoTest {
 	public void drawGame() throws Exception {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
-		Game game = new Game();
+		Game game = new Game(playerLuiz, playerMarcos);
 		Play play = new Play(game);
 		
-		game.addPlayer(playerLuiz);
-		game.addPlayer(playerMarcos);
 		play.addPlay(GameOptions.PAPER, playerMarcos);
 		play.addPlay(GameOptions.PAPER, playerLuiz);
 		Results result = new Results(play);

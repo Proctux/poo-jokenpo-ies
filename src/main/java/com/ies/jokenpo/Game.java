@@ -4,12 +4,9 @@ public class Game {
 	public Player playerOne;
 	public Player playerTwo;
 	
-	public void addPlayer(Player player) {
-		if (playerOne == null) {
-			playerOne = player;
-		} else {
-			playerTwo = player;
-		}
+	public Game(Player playerOne, Player playerTwo) {
+		this.playerOne = playerOne;
+		this.playerTwo = playerTwo;
 	}
 	
 	public Player getPlayerOne() {
