@@ -1,8 +1,8 @@
 package com.ies.jokenpo;
 
 public class Game {
-	static Player playerOne;
-	static Player playerTwo;
+	public Player playerOne;
+	public Player playerTwo;
 	
 	public void addPlayer(Player player) {
 		if (playerOne == null) {
@@ -10,5 +10,9 @@ public class Game {
 		} else {
 			playerTwo = player;
 		}
+	}
+	
+	public Player getPlayerOne() {
+		return playerOne;
 	}
 }

@@ -31,7 +31,7 @@ public class Results {
 	}
 	
 	public String playerOneWinsWhen(Integer result) {
-		if(result == - 5) {
+		if(result == -5) {
 			return "Player one wins, rock smashes scissors";
 		} else if (result == 2){
 			return "Player one wins, scissors cut paper";

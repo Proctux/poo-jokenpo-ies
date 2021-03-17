@@ -5,6 +5,11 @@ public class Play {
 	public Player firstPlayer;
 	public GameOptions secondChoice;
 	public Player secondPlayer;
+	public Game game;
+	
+	public Play(Game game) {
+		this.game = game;
+	}
 	
 	public void addPlay(GameOptions play, Player player) {
 		if(isFirst(player)) {
@@ -17,7 +22,7 @@ public class Play {
 	}
 
 	private boolean isFirst(Player player) {
-		return player == Game.playerOne;
+		return player == game.getPlayerOne();
 	}
 
 }

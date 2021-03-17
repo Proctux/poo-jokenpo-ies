@@ -11,7 +11,7 @@ public class JokenpoTest {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
 		Game game = new Game();
-		Play play = new Play();
+		Play play = new Play(game);
 		
 		game.addPlayer(playerLuiz);
 		game.addPlayer(playerMarcos);
@@ -27,7 +27,7 @@ public class JokenpoTest {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
 		Game game = new Game();
-		Play play = new Play();
+		Play play = new Play(game);
 		
 		game.addPlayer(playerLuiz);
 		game.addPlayer(playerMarcos);
@@ -43,7 +43,7 @@ public class JokenpoTest {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
 		Game game = new Game();
-		Play play = new Play();
+		Play play = new Play(game);
 		
 		game.addPlayer(playerLuiz);
 		game.addPlayer(playerMarcos);
@@ -59,7 +59,7 @@ public class JokenpoTest {
 		Player playerLuiz = new Player("Luiz");
 		Player playerMarcos = new Player("Marcos");
 		Game game = new Game();
-		Play play = new Play();
+		Play play = new Play(game);
 		
 		game.addPlayer(playerLuiz);
 		game.addPlayer(playerMarcos);
